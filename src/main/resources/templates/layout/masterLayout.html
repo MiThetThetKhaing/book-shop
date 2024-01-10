@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+          crossorigin="anonymous">
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark text-white">
@@ -46,11 +48,46 @@
         <h1 class="display-1">BOOKSHOP</h1>
         <p class="lead d-none d-md-block">Lorem ipsum dolor sit amet,
             consectetur adipisicing elit. Eos, tempore!</p>
-        <button id="book" class="btn btn-outline-primary text-white px-5 py-2">Book Now</button>
+        <a th:href="@{/book/list-books}" id="book" class="btn btn-outline-primary text-white px-5 py-2">Book Now</a>
     </div>
 </section>
 
 <div th:replace="${main}"></div>
+
+<section class="bg-dark text-white container-fluid">
+    <div class="container text-center p-5">
+        <h3>JOIN OUR NEWS BUYERS FOR DEALS AND UPDATE AND OFFERS</h3>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6 col-sm-8 col-lg-4">
+                <form action="#">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-success input-group-text">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="footer" class="bg-secondary p-4 text-white">
+    <ul class="nav text-center justify-content-center flex-column flex-sm-row text-white">
+        <li class="nav-item">
+            <a href="#" class="nav-link">FAQ</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">EXPERIENCE</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">CONTACT</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">BOOKNOW</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">EXPLORE</a>
+        </li>
+    </ul>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

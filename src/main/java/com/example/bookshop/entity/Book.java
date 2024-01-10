@@ -18,6 +18,7 @@ public class Book {
     private int id;
     @Id
     private String isbn;
+
     private String title;
     private String description;
     private double price;
